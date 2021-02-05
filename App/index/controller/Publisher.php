@@ -82,7 +82,7 @@ class Publisher
             );
             $messageBody = json_encode($data);
             $message = new AMQPMessage($messageBody, array('content_type' => 'text/plain', 'delivery_mode' => AMQPMessage::DELIVERY_MODE_PERSISTENT));
-            $channel->basic_publish($message, $exchange,'cc1');//推送的时候指定routkey为cc1 看测试结果
+            $channel->basic_publish($message, $exchange,$routingkey1);//推送的时候指定routkey为cc1 看测试结果
         }
 
         $channel->close();
