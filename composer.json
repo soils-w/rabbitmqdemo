@@ -1,0 +1,16 @@
+{
+    "require": {
+        "php-amqplib/php-amqplib": "^2.10",
+        "ext-json": "*",
+        "php": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "longq\\": "longq",
+            "app\\": "App"
+        },
+        "psr-0": {
+
+        }
+    }
+}
