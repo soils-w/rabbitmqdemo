@@ -28,7 +28,7 @@ php consumer.php
 关于rabbitmq的安装可以参考地址：[rabbitmq-1 window安装rabbitmq&&wamp安装amqp扩展](https://blog.csdn.net/qq_38475911/article/details/112993749?spm=1001.2014.3001.5502)
 
 
-.htaccess 配置：
+#### .htaccess 配置：
 ~~~
 <IfModule mod_rewrite.c>
   Options +FollowSymlinks -Multiviews
