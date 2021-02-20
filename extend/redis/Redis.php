@@ -120,6 +120,14 @@ class Redis
         return self::$redis->lpop($key);
 
     }
+    public static function blpop($keyarray,$timeout)
+    {
+
+        self::init();
+
+        return self::$redis->blpop($keyarray,$timeout);
+
+    }
 
     public static function lrange($key,$start,$end)
     {
